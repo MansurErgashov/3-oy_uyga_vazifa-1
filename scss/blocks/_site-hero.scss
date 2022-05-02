@@ -1,0 +1,119 @@
+.site-hero {
+}
+.site-hero__container {
+    position: relative;
+}
+.site-hero__boxbg {
+    width: 100%;
+    max-width: 1110px;
+    height: 600px;
+    background-image: url(../../img/hero1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.site-hero__boxend {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 100%;
+    max-width: 445px;
+    padding-top: 56px;
+    background-color: #fafafa;
+}
+.site-hero__boxend-desc {
+    font-family: $font-real;
+    max-width: 390px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.446429px;
+    color: $color-primary;
+}
+.site-hero__boxend-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 53px;
+    width: 200px;
+    height: 48px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    background-color: #203A4C;
+}
+.site-hero__boxend-link-desc {
+    font-family: $font-sans;
+    margin: 0;
+    margin-left: 53px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-white;
+}
+@include breakpoint-down(768px) {
+    .site-hero__boxbg{
+        background-image: url(../../img/herotablet1x.jpg);
+    }
+    .site-hero__boxend {
+        width: 100%;
+        max-width: 514px;
+    }
+    .site-hero__boxend-desc {
+        max-width: 458px;
+    }
+}
+@include breakpoint-down(620px) {
+    .site-hero__boxbg{
+        background-image: url(../../img/herotablet1x.jpg);
+    }
+    .site-hero__boxend {
+        width: 100%;
+        max-width: 440px;
+    }
+    .site-hero__boxend-desc {
+        max-width: 410px;
+    }
+}
+@include breakpoint-down(540px) {
+    .site-hero__boxbg{
+        background-image: url(../../img/herotablet1x.jpg);
+    }
+    .site-hero__boxend {
+        width: 100%;
+        max-width: 380px;
+    }
+    .site-hero__boxend-desc {
+        font-size: 40px;
+        line-height: 42px;
+        max-width: 360px;
+    }
+}
+@include breakpoint-down(420px) {
+    .site-hero__container {
+        position: none;
+        width: 100%;
+        max-width: 600px;
+    }
+    .site-hero__boxbg{
+        background-image: url(../../img/heromb1x.jpg);
+        background-size: center;
+        height: 300px;
+    }
+    .site-hero__boxend {
+        position: static;
+        width: 100%;
+        max-width: 600px;
+        padding: 0;
+    }
+    .site-hero__boxend-desc {
+        max-width: 458px;
+    }
+    .site-hero__boxend-link {
+        margin-top: 24px;
+    }
+}

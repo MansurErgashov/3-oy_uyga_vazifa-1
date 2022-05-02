@@ -1,0 +1,93 @@
+.contact {
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact__desc {
+    font-family: 'Ibarra Real Nova';
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+}
+.contact__hr {
+    width: 534px;
+}
+.contact__link {
+    font-family: 'Public Sans';
+    margin: 0;
+    padding: 17px 35px 17px 32px;
+    box-sizing: content-box;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-decoration: dashed;
+    text-transform: uppercase;
+    border: 1px solid #33323D;
+    color: #33323D;
+}
+.contact__link:hover {
+    background-color: aqua;
+}
+.contact__link:active {
+    color: aqua;
+    background-color: #FFFFFF;
+}
+@include breakpoint-down(1110px) {
+    .contact__hr {
+        width: 450px;
+    }
+}
+@include breakpoint-down(1060px) {
+    .contact__hr {
+        width: 390px;
+    }
+}
+@include breakpoint-down(990px) {
+    .contact__hr {
+        width: 320px;
+    }
+}
+@include breakpoint-down(920px) {
+    .contact__hr {
+        width: 260px;
+    }
+}
+@include breakpoint-down(870px) {
+    .contact__hr {
+        width: 210px;
+    }
+}
+@include breakpoint-down(830px) {
+    .contact__hr {
+        width: 150px;
+    }
+}
+@include breakpoint-down(768px) {
+    .contact__hr {
+        width: 113px;
+    }
+}
+@include breakpoint-down(690px) {
+    .contact__hr {
+        display: none;
+    }
+}
+@include breakpoint-down(690px) {
+    .contact__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__link {
+        margin-top: 40px;
+    }
+}

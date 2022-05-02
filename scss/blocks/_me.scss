@@ -1,0 +1,89 @@
+.me {
+    margin-top: 48px;
+}
+.me__hr {
+    margin: 0;
+}
+.me__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 48px;
+    padding-bottom: 109px;
+}
+.me__box-heading {
+    font-family: 'Ibarra Real Nova';
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+}
+.me__box-form {
+    width: 100%;
+    max-width: 635px;
+}
+.me__box-label {
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+    &:not(:last-child) {
+    margin-bottom: 24px;
+    }
+}
+.me__lb-span {
+    font-family: 'Public Sans';
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 30px;
+    color: #33323D;
+    opacity: 0.8;
+}
+.me-box-input {
+    font-family: 'Public Sans';
+    width: 100%;
+    max-width: 635px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    color: #33323D;
+    opacity: 0.4;
+}
+.me__box-lb-textarea{
+    font-family: 'Public Sans';
+    height: 96px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    color: #33323D;
+    opacity: 0.4;
+}
+.me__form-btn {
+    font-family: 'Public Sans';
+    margin-top: 24px;
+    padding: 17px 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #203A4C;
+    color: #FFFFFF;
+}
+@include breakpoint-down(930px) {
+    .me__box {
+        flex-direction: column;
+    }
+    .me__box-form {
+        margin-top: 32px;
+    }
+}

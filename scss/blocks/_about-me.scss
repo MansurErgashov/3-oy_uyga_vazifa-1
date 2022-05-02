@@ -1,0 +1,163 @@
+.about-me {
+    margin-top: 96px;
+}
+.about-me__container {
+    display: flex;
+    justify-content: space-between;
+}
+.about-me__picture-img{
+    max-width: 550px;
+}
+.about-me__box {
+    max-width: 350px;
+}
+.about-me__box-hr {
+    margin: 0;
+    padding: 0;
+}
+.about-me__box-heading {
+    font-family: 'Ibarra Real Nova';
+    margin: 50px 0 0 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+}
+.about-me__box-desc {
+    font-family: 'Public Sans';
+    margin: 28px 0 0 0;
+    padding: 0;
+    max-width: 350px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323D;
+    opacity: 0.8;
+}
+.about-me__box-link {
+    font-family: 'Public Sans';
+    display: inline-block;
+    margin: 24px 0 0 0;
+    box-sizing: content-box;
+    padding: 17px 36px 17px 32px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #33323D;
+    border: 1px solid #33323D;
+    text-decoration: none;
+}
+.about-me__box-link:hover {
+    background-color: aqua;
+}
+.about-me__box-link:active {
+    color: aqua;
+    background-color: #ffffff;
+}
+.about-me__box-hre {
+    margin: 78px 0 0 0;
+    padding: 0;
+    background: #33323D;
+    opacity: 0.15;
+}
+@include breakpoint-down(980px) {
+    .about-me__picture-img {
+        max-width: 350px;
+    }
+    .about-me__box {
+        max-width: 350px;
+    }
+}
+@include breakpoint-down(768px) {
+    .about-me__picture-img {
+        max-width: 282px;
+    }
+    .about-me__box {
+        max-width: 339px;
+    }
+}
+@include breakpoint-down(690px) {
+    .about-me__container {
+       flex-direction: column;
+       align-items: center;
+       max-width: 650px;
+    }
+    .about-me__box {
+        margin-top: 33px;
+        text-align: center;
+    }
+    .about-me__picture-img {
+        max-width: 550px;
+
+    }
+    .about-me__box {
+        max-width: inherit;
+    }
+    .about-me__box-desc {
+        max-width: 550px;
+    }
+}
+@include breakpoint-down(590px) {
+    .about-me__container {
+       max-width: 450px;
+    }
+    .about-me__picture-img {
+        max-width: 450px;
+
+    }
+    .about-me__box {
+        max-width: inherit;
+    }
+    .about-me__box-desc {
+        max-width: 450px;
+    }
+}
+@include breakpoint-down(490px) {
+    .about-me__container {
+       max-width: 350px;
+    }
+    .about-me__picture-img {
+        max-width: 350px;
+
+    }
+    .about-me__box {
+        max-width: inherit;
+    }
+    .about-me__box-desc {
+        max-width: 350px;
+    }
+}
+@include breakpoint-down(390px) {
+    .about-me__container {
+       max-width: 310px;
+    }
+    .about-me__picture-img {
+        max-width: 310px;
+
+    }
+    .about-me__box {
+        max-width: inherit;
+    }
+    .about-me__box-desc {
+        max-width: 310px;
+    }
+}
+@include breakpoint-down(350px) {
+    .about-me__container {
+       max-width: 270px;
+    }
+    .about-me__picture-img {
+        max-width: 270px;
+
+    }
+    .about-me__box {
+        max-width: inherit;
+    }
+    .about-me__box-desc {
+        max-width: 270px;
+    }
+}
